@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gift gift gift</title>
+    <style>
+        .cont{
+         display: grid;
+         grid-template-areas: "zap zap zap"
+                              ". film ."
+                              "dol dol dol";
+        grid-template-rows: 150px 550px 150px;
+        grid-template-columns: 2fr 5fr 2fr;
+        row-gap: 25px;
+        }
+        .zap{
+            grid-area: zap;
+            text-align:Center;
+            font-size:250%;
+            font-family:Agency FB;
+        }
+        .dol{
+            grid-area: dol;
+            text-align: center;
+            display:grid;
+            grid-template-areas: ". tekst .";
+            grid-template-columns: 2fr 4fr 2fr;
+        }
+
+        h2{
+            grid-area: tekst;
+            font-size:250%;
+            font-family:sans-serif;
+            color: rgb(51, 100, 51);
+        }
+        h2::before{
+            content:url("drzewko.png");
+        }
+        h2::after{
+            content:url("drzewko.png");
+        }
+
+
+        .film{
+            grid-area: film;
+        }
+        iframe{
+            border:dashed gold 10px;
+        }
+
+    </style>
+</head>
+<body>
+<section class="cont">
+    <div class="zap"><h1>DEJ SE FULLSCREEN NA FILMIKU</h1></div>
+    <div class="film">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/a_gUv4laOIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="dol">
+        <h2>MERRY CHRISTMAS!! LOVE YOU <3</h2>
+    </div>
+</section>
+</body>
+</html>
